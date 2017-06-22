@@ -12,9 +12,6 @@ Vue.use(LoadingPlugin ); //全局注册LoadingPlugin事件，注册之后，不�
 import C from './conf';
 import M from './common';
 
-// 引入store相关信息
-import store from '../../vuex/store';
-
 // import vueFilter from './vueFilter';
 require('./vueFilter');
 

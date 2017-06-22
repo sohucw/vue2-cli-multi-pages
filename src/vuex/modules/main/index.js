@@ -9,7 +9,7 @@ import Api from 'assets/js/api';
 import * as types from './mutation-type'
 
 const state = {
-    demoData: ''
+    demoData: []
 
 };
 const getters = {
@@ -20,22 +20,21 @@ const getters = {
 
 const actions = {
     // 根据系统获取下的应用列表
-    /*getAppList ({commit, state}, name) {
-        return Api.getAppList({app: name}).then(res => {
+    getTestData ({commit, state}, name) {
+        return Api.getTestData({}).then(res => {
             commit(types.SET_APP_LIST, {
                 data:res.data
             });
             return res;
         });
-    }*/
+    }
 
 };
 
 const mutations = {
-
-    /*[types.GET_MENU_LIST] (state, payload) {
-        state.menuList = Utils.filterEmptyData(payload.data);
-    },*/
+    [types.SET_APP_LIST] (state, payload) {
+        state.demoData = payload.data;
+    }
 };
 
 export default{

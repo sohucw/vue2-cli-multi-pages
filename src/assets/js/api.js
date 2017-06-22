@@ -14,8 +14,8 @@ const baseUrl = '';
 
 const apiList = {
     // 获取登陆用户的名字
-    getUserName: {
-        url: baseUrl + 'user/info'
+    getTestData: {
+        url: '../../../static/data/1.json'
     }
 
 };
