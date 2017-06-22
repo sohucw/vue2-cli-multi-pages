@@ -84,7 +84,7 @@ var webpackConfig = {
 
 
 module.exports = vuxLoader.merge(webpackConfig, {
-    options: {
+  options: {
     
   },	
   plugins: ['vux-ui', 'progress-bar', 'duplicate-style']

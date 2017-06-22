@@ -6,3 +6,16 @@
  vue-router
  vuex
  vux
+
+## 说明
+
+vux官网配置[说明](https://vux.li/#/)
+>vux2必须配合vux-loader使用, 请在build/webpack.base.conf.js里参照如下代码进行配置：
+```js
+const vuxLoader = require('vux-loader')
+const webpackConfig = originalConfig // 原来的 module.exports 代码赋值给变量 webpackConfig
+
+module.exports = vuxLoader.merge(webpackConfig, {
+  plugins: ['vux-ui']
+})
+```

@@ -1,12 +1,7 @@
 <template>
 <div id="app">
 	
-	<divider>github 地址 </divider>
-	
-	<div class="font12 pad10">
-		<a class="color888" href="https://github.com/bluefox1688/vue-cli-multi-page" target="_blank">https://github.com/bluefox1688/vue-cli-multi-page</a>
-	</div>
-	
+
     <div>
     	<divider>vux UI 展示</divider>
 		<group title="vux UI demo">
@@ -29,6 +24,12 @@
 		<cell title="iconfont图标展示" value="" is-link link="../iconfont/list.html"></cell>
 	</group>
 	</div>
+
+	<divider>vuex数据状态管理demo</divider>
+	<group>
+		<cell title="vue-store" value="" is-link link="../vuex/list.html"></cell>
+	</group>
+
 	
 	<div class="martop15">
 	<divider>其他</divider>

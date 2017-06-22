@@ -2,7 +2,6 @@ require('assets/css/common.css');
 
 //注册时，vux必须放在 import Vue from 'vue'; 之前，否侧打包的体积非常大，估计是vux OR vue 抽风了
 import { AlertPlugin,LoadingPlugin  } from 'vux'
-
 import Vue from 'vue';
 
 //------ VUX UI 注册，如果不需要  VUX UI 请删除以下注册 -------
@@ -13,12 +12,17 @@ Vue.use(LoadingPlugin ); //全局注册LoadingPlugin事件，注册之后，不�
 import C from './conf';
 import M from './common';
 
+// 引入store相关信息
+import store from '../../vuex/store';
+
 // import vueFilter from './vueFilter';
 require('./vueFilter');
 
 //解决click点击300毫秒延时问题
 import FastClick from 'fastclick';
-FastClick.attach(document.body);	
+FastClick.attach(document.body);
+
+
 
 export default{
 	M,C
