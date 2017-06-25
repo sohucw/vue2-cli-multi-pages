@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
 
 import Lib from 'assets/js/Lib';
 
@@ -36,5 +36,6 @@ export default {
 </script>
 
 <style lang="less">
+
 
 </style>

@@ -1451,7 +1451,7 @@
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
 
 import Lib from 'assets/js/Lib';
 

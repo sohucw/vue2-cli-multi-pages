@@ -13,12 +13,12 @@ const routes = [
 
 
 
-routes.beforeEach(function (to, form, next) {
+/*routes.beforeEach(function (to, form, next) {
 
 });
 router.afterEach(function (to) {
   //store.commit('updateLoadingStatus', {isLoading: false})
-})
+})*/
 const router = new VueRouter({
   routes:routes
 })

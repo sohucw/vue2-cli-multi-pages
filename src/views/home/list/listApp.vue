@@ -3,7 +3,7 @@
 	
 
     <div>
-    	<divider>vux UI 展示</divider>
+    	<divider>vux UI 展示  gggg</divider>
 		<group title="vux UI demo">
 			<cell v-for="el in list" :key="el.id" :title="el.name" value="" is-link :link="el.url"></cell>
 		</group>

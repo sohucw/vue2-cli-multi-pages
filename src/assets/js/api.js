@@ -13,10 +13,14 @@ const baseUrl = '';
 
 
 const apiList = {
-    // 获取登陆用户的名字
+    // XXX
     getTestData: {
         url: '../../../static/data/1.json'
+    },
+    getTestD33ata: {
+        url: '../../../static/data/1.json'
     }
+
 
 };
 
