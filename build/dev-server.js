@@ -47,6 +47,7 @@ Object.keys(proxyTable).forEach(function (context) {
   if (typeof options === 'string') {
     options = { target: options }
   }
+  console.log('proxyMiddleware',proxyMiddleware(options.filter || context, options));
   app.use(proxyMiddleware(options.filter || context, options))
 })
 
@@ -62,6 +63,7 @@ app.use(hotMiddleware)
 
 // serve pure static assets
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
+
 app.use(staticPath, express.static('./static'))
 
 var uri = 'http://localhost:' + port

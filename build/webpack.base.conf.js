@@ -7,7 +7,7 @@ var glob = require('glob');
 var entries =  utils.getMultiEntry('./src/'+config.moduleName+'/**/**/*.js'); // 获得入口js文件
 var chunks = Object.keys(entries);
 
-console.log(chunks);
+//console.log(chunks);
 
 var projectRoot = path.resolve(__dirname, '../')
 const vuxLoader = require('vux-loader')
